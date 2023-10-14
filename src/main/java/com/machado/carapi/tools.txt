@@ -1,0 +1,59 @@
+
+ #Curl
+
+ curl -x POST -H "Content-Type:application/json" -d '{"nome":"Corolla","marca":"Toyota","modelo":2022}' http://localhost:8080/carros
+
+ curl -x POST -H "Content-Type:application/json" -d '{"nome":"Corolla","marca":"Toyota","modelo":2022}' 127.0.0.1:8080/carros
+
+ curl -x POST -H "Content-Type:application/json" -d "{ """nome""":"""cors""", """marca""":"""gm""", """modelo""":"""1999"""}" localhost:8080/carros
+
+ curl -X POST -d "param1=valor1&param2=valor2" http://url/api
+
+ curl -X PUT -d "param1=valor1&param2=valor2" http://url/api
+
+ curl http://exemplo.com  //Get
+
+-----------------------------------------------------------------x
+#SQL
+
+INSERT INTO tabela (coluna1, coluna2) VALUES (valor1, valor2);
+
+INSERT INTO cars (nome,marca,modelo) VALUES ("uno","fiat","2003");
+
+UPDATE tabela SET coluna = novo_valor WHERE condição;
+
+DELETE FROM tabela WHERE condição;
+
+SELECT * FROM tabela1 INNER JOIN tabela2 ON tabela1.coluna = tabela2.coluna;
+
+SELECT coluna, COUNT(*) FROM tabela GROUP BY coluna;
+
+SELECT * FROM tabela ORDER BY coluna ASC/DESC;
+
+CREATE TABLE nome_tabela (
+    coluna1 tipo1,
+    coluna2 tipo2,
+    ...
+);
+
+ALTER TABLE tabela ADD coluna tipo;
+
+ALTER TABLE tabela ALTER COLUMN coluna SET tipo;
+
+ALTER TABLE cars MODIFY coluna tipo NULL/NOT NULL;
+
+ALTER TABLE ALTER COLUMN coluna SET tipo;
+
+
+
+ALTER TABLE tabela DROP COLUMN coluna;
+
+---------------------------------------------------x
+
+
+
+
+
+
+
+
